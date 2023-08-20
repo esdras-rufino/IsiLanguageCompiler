@@ -11,7 +11,7 @@ public class IsiCompiler {
 
     public static void main(String[] args) throws IOException {
         // Criar uma variável String com o nome do arquivo de entrada
-        String inputFileName = "input.ini";
+        String inputFileName = "input.isi";
 
         // Usar a variável para criar um objeto do tipo ANTLRInputStream
         ANTLRInputStream input = new ANTLRInputStream(new FileInputStream(new File(inputFileName)));
