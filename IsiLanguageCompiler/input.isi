@@ -1,0 +1,36 @@
+programa
+
+  numero a, b;
+  texto  t1;
+
+  leia(a);
+  leia(b);
+  
+  a = 1 + 2 * 3 / b;
+  
+
+  se ( a > b ) {
+     escreva (a);
+  }
+  senao {
+     escreva (b);
+  }
+  
+  highlight a;
+  highlight b;
+  highlight t1;
+  
+  apirest.implementarCompilador();
+  
+  interpretador.implementarInterpretador();
+  
+  // gera código-fonte em Java
+java = prog.generateTarget('java');
+
+// gera código-fonte em C++
+cpp = prog.generateTarget('cpp');
+
+// gera código-fonte em Python
+python = prog.generateTarget('python');
+
+fimprog;
